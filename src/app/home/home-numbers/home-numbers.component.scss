@@ -1,5 +1,9 @@
 @import "../../_utils/index";
 
+.section-title__wrapper {
+  @include sectionHeadingWrapper();
+}
+
 .section__title {
   @include sectionHeading();
 }
@@ -31,7 +35,7 @@
 }
 
 .number__value--label {
-  font-size: rem(60px);
+  font-size: rem(80px);
   font-weight: 600;
   color: $red;
   padding: 0 0.75rem;

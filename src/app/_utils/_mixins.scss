@@ -75,10 +75,53 @@ $rem-px-only: false !default;
     }
   }
 }
+
 // ---------------------------------------------------------------------------------------------
+
+@mixin sectionHeadingWrapper {
+  display: inline-block;
+  overflow: hidden;
+}
 
 @mixin sectionHeading {
   font-size: rem(90px);
   color: $dark;
   margin-bottom: 3rem;
+  position: relative;
+
+  transition: transform 0.5s;
+  transform: translateX(-100%);
+
+  &.trigger {
+    animation: translateText 0.5s ease forwards;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: $dark;
+    transform-origin: right center;
+    transform: scaleX(1);
+    transition: transform 0.5s;
+  }
+
+  &.trigger::after {
+    animation: removePreloader 0.5s 0.5s ease forwards;
+  }
+}
+
+@keyframes translateText {
+  to {
+    transform: translateX(0)
+  }
+}
+
+@keyframes removePreloader {
+  to {
+    transform: scaleX(0);
+  }
 }

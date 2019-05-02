@@ -51,7 +51,7 @@ export class HomeEcologyComponent implements OnInit, AfterViewInit {
       if (arr.length > 0) {
         const parent = element.nativeElement;
         const circles = parent.querySelectorAll('.timeline__center');
-        const first_circle = circles[1];
+        const first_circle = circles[0];
         const last_circle = circles[circles.length - 1];
         const line_x_offset = first_circle.offsetLeft + first_circle.offsetWidth / 2;
 

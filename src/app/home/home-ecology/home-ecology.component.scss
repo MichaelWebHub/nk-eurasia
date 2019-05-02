@@ -1,5 +1,9 @@
 @import "../../_utils/index";
 
+.section-title__wrapper {
+  @include sectionHeadingWrapper();
+}
+
 .section__title {
   @include sectionHeading();
 }

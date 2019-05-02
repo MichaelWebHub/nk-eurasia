@@ -9,22 +9,22 @@ export class FooterComponent implements OnInit {
 
   currentYear: number = new Date().getFullYear();
 
-  navigation: { label: string; url: string }[] = [
+  navigation: {label: string; url: string}[] = [
     {
       label: 'Главная',
-      url: 'home'
+      url: '/home'
     },
     {
       label: 'Продукция',
-      url: 'products'
+      url: '/products'
     },
     {
       label: 'Услуги',
-      url: 'services'
+      url: '/services'
     },
     {
       label: 'Документы',
-      url: 'documents'
+      url: '/documents'
     }
   ];
 
