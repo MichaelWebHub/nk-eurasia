@@ -1,0 +1,102 @@
+@import "../../_utils/index";
+
+.section__title {
+  @include sectionHeading();
+}
+
+.timeline {
+  position: relative;
+}
+
+.line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background: $dark;
+  z-index: 1;
+}
+
+.timeline__row {
+  display: flex;
+  padding-bottom: 0;
+  margin-bottom: 2rem;
+}
+
+.timeline__row--first {
+  margin-bottom: 0;
+}
+
+.timeline__ecology {
+  width: calc(50% - 25px);
+  padding-right: 2rem;
+}
+
+.timeline__center {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 3;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.timeline__economy {
+  width: calc(50% - 25px);
+  padding-left: 2rem;
+}
+
+.timeline__text {
+  color: $dark;
+  margin-top: rem(16px);
+  font-size: rem(18px);
+  line-height: 1.4;
+}
+
+.center-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid $dark;
+  background: $light;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: rem(18px);
+  color: $dark;
+  font-weight: 600;
+
+  position: relative;
+  transition: 0.4s;
+}
+
+.center-circle::after {
+  content: attr(data-text);
+  width: 100%;
+  height: 100%;
+  background: $dark;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: center bottom;
+  transform: scaleY(0);
+  transition: transform 0.3s;
+  color: $light;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline__row:hover .center-circle::after {
+  transform: scaleY(1);
+  transform-origin: center top;
+}

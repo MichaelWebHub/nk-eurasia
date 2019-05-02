@@ -1,0 +1,41 @@
+@import "../_utils/index";
+
+.navigation {
+  display: flex;
+  align-items: center;
+  padding: 4rem 5rem;
+  animation: 1.5s popup ease-in;
+}
+
+.nav__link {
+  color: $creme;
+  font-size: rem(20px);
+  cursor: pointer;
+  margin-right: 2rem;
+  position: relative;
+}
+
+.nav__link::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: $creme;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right center;
+  transition: transform 0.4s;
+}
+
+.nav__link:hover::after,
+.nav__link:focus::after {
+  transform: scaleX(1);
+  transform-origin: left center;
+}
+
+@keyframes popup {
+  from {opacity: 0}
+  to {opacity: 1}
+}

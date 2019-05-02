@@ -1,0 +1,17 @@
+@import "../../_utils/index";
+
+.section__title {
+  @include sectionHeading();
+}
+
+.section__about {
+
+}
+
+.about__text {
+  width: 70%;
+  margin-top: 0.75rem;
+  font-size: rem(19px);
+  color: $dark;
+  line-height: 1.41;
+}

@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=cyrillic');
+@import "./app/_utils/index";
+
+html, body {
+  cursor: default;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background: $light;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}

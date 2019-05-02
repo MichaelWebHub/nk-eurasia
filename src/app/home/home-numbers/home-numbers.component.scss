@@ -1,0 +1,102 @@
+@import "../../_utils/index";
+
+.section__title {
+  @include sectionHeading();
+}
+
+.numbers {
+  display: flex;
+  align-items: center;
+}
+
+.number {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex: 1 1 33.33%;
+}
+
+.numbers__group:last-of-type {
+  margin-left: 0.75rem;
+}
+
+.number__icon {
+  font-size: rem(60px);
+  color: $dark;
+}
+
+.number__value {
+  display: flex;
+  align-items: baseline;
+}
+
+.number__value--label {
+  font-size: rem(60px);
+  font-weight: 600;
+  color: $red;
+  padding: 0 0.75rem;
+}
+
+.number__value--unit {
+  font-size: rem(26px);
+  color: $dark;
+  font-weight: 600;
+}
+
+.number__description {
+  color: $dark;
+  font-size: rem(18px);
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.svg-animation {
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.svg-animation.trigger {
+  opacity: 1;
+}
+
+#circle.trigger {
+  animation: 1s sdo ease;
+}
+
+#line.trigger {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 2s 1s ease forwards;
+}
+
+#circle-pressure.trigger {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 3s ease forwards;
+}
+
+#line-pressure.trigger {
+  animation: rotate 2s ease forwards;
+  transform-origin: 110px 110px;
+}
+
+#temperature.trigger {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: dash 3s ease forwards;
+}
+
+@keyframes sdo {
+  from {stroke-dashoffset: 500px}
+  to {stroke-dashoffset: 0}
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes rotate {
+  to {transform: rotate(230deg)}
+}

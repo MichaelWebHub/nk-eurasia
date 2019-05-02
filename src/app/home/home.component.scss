@@ -1,0 +1,9 @@
+@import "../_utils/index";
+
+.section {
+  padding: 5rem 5rem 0;
+}
+
+.section:last-of-type {
+  padding-bottom: 5rem;
+}

@@ -1,0 +1,105 @@
+@import "../../_utils/index";
+
+.section__video {
+  max-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.section__video-player {
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.video__filter {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, $dark1Opacity 10%, $darkOpacity 90%);
+}
+
+.filter__header {
+  height: rem(300px);
+  background: $light;
+  margin-top: auto;
+  width: 70%;
+  padding: 2.5rem 5rem;
+  animation: 0.5s expand ease-in;
+}
+
+.header__title {
+  font-size: rem(104px);
+  color: $dark;
+  overflow: hidden;
+}
+
+.header__description {
+  margin-top: 0.5rem;
+  font-size: rem(18px);
+  color: $dark;
+  line-height: 1.34;
+  font-weight: 600;
+  overflow: hidden;
+}
+
+.header__description-extended {
+  padding-bottom: 4px;
+}
+
+.header__link {
+  color: $red;
+  display: inline-block;
+  position: relative;
+}
+
+.header__link::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: $red;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right center;
+  transition: transform 0.4s;
+}
+
+.header__link:hover::after,
+.header__link:focus::after {
+  transform: scaleX(1);
+  transform-origin: left center;
+}
+
+.animate-text {
+  display: inline-block;
+  animation-name: textAppear;
+  animation-timing-function: ease-in-out;
+}
+
+.animate-text.speed-1 {
+  animation-duration: 1.1s;
+}
+
+.animate-text.speed-2 {
+  animation-duration: 1.4s;
+}
+
+.animate-text.speed-3 {
+  animation-duration: 1.3s;
+}
+
+@keyframes expand {
+  from {transform: translateX(-70%)}
+  to {transform: translateX(0)}
+}
+
+@keyframes textAppear {
+  from {transform: translateY(100%)}
+  to {transform: translateY(0)}
+}

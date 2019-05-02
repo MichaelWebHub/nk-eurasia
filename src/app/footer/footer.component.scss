@@ -1,0 +1,54 @@
+@import "../_utils/index";
+
+.footer {
+  padding: 3rem 5rem 1.5rem;
+  background: $dark;
+}
+
+.footer-nav {
+  display: flex;
+  align-items: center;
+}
+
+.footer-nav__link {
+  color: $light;
+  font-size: rem(16px);
+  cursor: pointer;
+  margin-right: 2rem;
+  position: relative;
+}
+
+.footer-nav__link::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: $light;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right center;
+  transition: transform 0.4s;
+}
+
+.footer-nav__link:hover::after,
+.footer-nav__link:focus::after {
+  transform: scaleX(1);
+  transform-origin: left center;
+}
+
+@keyframes popup {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+.footer-nav__contact {
+  margin-left: auto;
+}
+
+.footer__copyright {
+  margin-top: 1.5rem;
+  text-align: center;
+  color: $light;
+}
