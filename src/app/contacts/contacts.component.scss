@@ -15,3 +15,13 @@
 .section__title {
   @include sectionHeading();
 }
+
+
+.address {
+  display: flex;
+}
+
+.address__map {
+  width: rem(400px);
+  height: rem(400px);
+}

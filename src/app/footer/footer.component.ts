@@ -25,6 +25,10 @@ export class FooterComponent implements OnInit {
     {
       label: 'Документы',
       url: '/documents'
+    },
+    {
+      label: 'Контакты',
+      url: '/contacts'
     }
   ];
 

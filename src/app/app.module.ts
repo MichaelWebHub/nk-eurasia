@@ -15,6 +15,7 @@ import { HomePartnersComponent } from './home/home-partners/home-partners.compon
 import { ProductsComponent } from './products/products.component';
 import { ServicesComponent } from './services/services.component';
 import { DocumentsComponent } from './documents/documents.component';
+import { ContactsComponent } from './contacts/contacts.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { DocumentsComponent } from './documents/documents.component';
     HomePartnersComponent,
     ProductsComponent,
     ServicesComponent,
-    DocumentsComponent
+    DocumentsComponent,
+    ContactsComponent
   ],
   imports: [
     BrowserModule,
