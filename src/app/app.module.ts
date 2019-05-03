@@ -16,6 +16,8 @@ import { ProductsComponent } from './products/products.component';
 import { ServicesComponent } from './services/services.component';
 import { DocumentsComponent } from './documents/documents.component';
 import { ContactsComponent } from './contacts/contacts.component';
+import {FormsModule} from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { ContactsComponent } from './contacts/contacts.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

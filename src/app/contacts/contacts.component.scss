@@ -1,11 +1,15 @@
 @import "../_utils/index";
 
+.nav-wrapper {
+  background: $dark;
+}
+
 .section {
-  padding: 5rem 5rem 0;
+  padding: 2.5rem 5rem 0;
 }
 
 .section:last-of-type {
-  padding-bottom: 5rem;
+  padding-bottom: 2.5rem;
 }
 
 .section-title__wrapper {
@@ -16,6 +20,20 @@
   @include sectionHeading();
 }
 
+.address__heading {
+  font-size: 1rem;
+  color: $dark;
+}
+
+.address__heading:last-of-type {
+  margin-top: 1rem;
+}
+
+.address__label {
+  color: $dark;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
 
 .address {
   display: flex;
@@ -24,4 +42,53 @@
 .address__map {
   width: rem(400px);
   height: rem(400px);
+}
+
+.address__text {
+  padding-left: 2rem;
+}
+
+.form__row {
+  margin-top: 1.5rem;
+}
+
+.form__input {
+  width: rem(400px);
+  outline: 0;
+  border: 1px solid $darkOpacity;
+  border-radius: 2px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: $dark;
+  line-height: 1.4;
+}
+
+textarea.form__input {
+  resize: vertical;
+  max-height: 200px;
+  min-height: 2rem;
+}
+
+.form__submit {
+  padding: 0.5rem;
+  background: $red;
+  color: $light;
+  font-size: 1rem;
+  border: 1px solid $red;
+  outline: 0;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.form__submit[disabled] {
+  opacity: 0.75;
+  cursor: default;
+}
+.form__input:focus {
+  border-color: $dark;
+}
+
+.message {
+  font-size: 1rem;
+  color: $dark;
 }

@@ -1,3 +1,7 @@
+<div class="nav-wrapper">
+  <app-navigation></app-navigation>
+</div>
+
 <div class="section">
 
   <div class="section-title__wrapper">
@@ -16,22 +20,28 @@
 
     <div class="address__text">
 
+      <h4 class="address__heading">Адрес:</h4>
       <address class="address__label"> Москва, Россия, Профсоюзная улица, 3, 117036 </address>
 
-      <form class="form">
+      <h4 class="address__heading">Обратная связь:</h4>
+      <form id="form" #form="ngForm" (submit)="onSubmit()">
 
         <div class="form__row">
-          <input class="form__input" type="text" placeholder="Email">
+          <input type="email" class="form__input" name="email" ngModel placeholder="Email" required>
         </div>
 
         <div class="form__row">
-          <textarea class="form__input" placeholder="Сообщение"></textarea>
+          <textarea class="form__input" name="message" ngModel placeholder="Сообщение" required></textarea>
         </div>
 
         <div class="form__row">
-          <button class="form__submit">Отправить</button>
+          <button class="form__submit" [attr.data-content]="'Отправить'" [disabled]="form.invalid">Отправить</button>
         </div>
 
+        <div class="form__row">
+          <p class="message" *ngIf="status === true"> Сообщение успешно отправлено </p>
+          <p class="message" *ngIf="status === false"> Возникла ошибка при отправке сообщения </p>
+        </div>
       </form>
 
     </div>

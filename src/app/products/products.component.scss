@@ -1,11 +1,15 @@
 @import "../_utils/index";
 
+.nav-wrapper {
+  background: $dark;
+}
+
 .section {
-  padding: 5rem 5rem 0;
+  padding: 2.5rem 5rem 0;
 }
 
 .section:last-of-type {
-  padding-bottom: 5rem;
+  padding-bottom: 2.5rem;
 }
 
 .section-title__wrapper {
