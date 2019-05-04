@@ -20,7 +20,7 @@ export class ContactsComponent implements OnInit {
   onSubmit(): void {
 
     try {
-      emailjs.sendForm('yandex', 'template_IKWoYchl', 'form', 'user_OShSxiw0BpmQ7XiECbLOq')
+      emailjs.sendForm('yandex', 'template_NQWXoYQc', 'form', 'user_JOo9rzNDhmu3PM4hhlGed')
         .then((response) => {
           this.status = true;
         }, (err) => {

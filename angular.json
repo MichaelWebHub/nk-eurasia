@@ -28,7 +28,8 @@
             ],
             "styles": [
               "src/styles.scss",
-              "src/assets/fontawesome-all.css"
+              "src/assets/fontawesome-all.css",
+              "src/assets/swiper.min.css"
             ],
             "scripts": []
           },

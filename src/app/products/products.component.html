@@ -3,9 +3,139 @@
 </div>
 
 <div class="section">
+  <div class="section-title__wrapper">
+    <h2 class="section__title trigger">Оборудование</h2>
+  </div>
+</div>
+
+<div class="section">
 
   <div class="section-title__wrapper">
-    <h2 class="section__title trigger">Продукция</h2>
+    <h4 class="products__title trigger">Системы холодной врезки</h4>
   </div>
+
+  <div class="products__description">
+    <p class="description">
+      Системы холодной врезки представляют собой специальные сверлильные механизмы с ручным, пневматическим или
+      гидравлическим приводом.
+    </p>
+  </div>
+
+  <div class="product__gallery">
+
+    <div class="swiper-container" [swiper]="config">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" *ngFor="let item of products1_images">
+          <img class="product__image-photo" [src]="item.url" alt="">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="products__items">
+    <div class="product__item">
+      <div class="item__col item__col-4 th">Название</div>
+      <div class="item__col item__col-4 th">Диаметр вырезаемого отверстия, мм</div>
+      <div class="item__col item__col-4 th">Давление, МПа</div>
+      <div class="item__col item__col-4 th">Ход штока, мм</div>
+    </div>
+    <div class="product__item" *ngFor="let item of products1">
+      <div class="item__col item__col-4">{{item.label}}</div>
+      <div class="item__col item__col-4">{{item.diameterMin}} - {{item.diameterMax}}</div>
+      <div class="item__col item__col-4">до {{item.pressure}}</div>
+      <div class="item__col item__col-4">{{item.deltaMin ? item.deltaMin + ' - ' : ''}} {{item.deltaMax}}</div>
+    </div>
+  </div>
+
+</div>
+
+<div class="section">
+
+  <div class="section-title__wrapper">
+    <h4 class="products__title">Задвижки</h4>
+  </div>
+
+  <div class="products__description">
+    <p class="description">
+      Системы для перекрытия типа «SHORTSTOPP» ручные, а «FOLDING PLUGGER», «STOPPLE» и «STOPPLE TRAIN» - полностью
+      гидравлические, служат временной секущей арматурой для отсечения части трубопровода для переноса, ремонтов или
+      модификаций без прерывания функционирования. Система для перекрытия состоит из гидравлических цилиндров, адаптеров
+      и перекрывающих головок.
+    </p>
+    <p class="description">
+      Задвижки типа «SHORTCUT», а также «SANDWICH» диаметром до 500 мм имеют ручной, а более 500 мм гидравлический
+      привод.
+    </p>
+  </div>
+
+  <div class="product__gallery">
+
+    <div class="swiper-container" [swiper]="config">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" *ngFor="let item of products2_images">
+          <img class="product__image-photo" [src]="item.url" alt="">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="products__items">
+    <div class="product__item">
+      <div class="item__col item__col-3 th">Название</div>
+      <div class="item__col item__col-3 th">Диаметр перекрываемого трубопровода, мм</div>
+      <div class="item__col item__col-3 th">Давление, МПа</div>
+    </div>
+    <div class="product__item" *ngFor="let item of products2">
+      <div class="item__col item__col-3">{{item.label}}</div>
+      <div class="item__col item__col-3">{{item.diameterMin}} - {{item.diameterMax}}</div>
+      <div class="item__col item__col-3">до {{item.pressure}}</div>
+    </div>
+  </div>
+
+</div>
+
+<div class="section">
+
+  <div class="section-title__wrapper">
+    <h4 class="products__title">Фитинги</h4>
+  </div>
+
+  <div class="products__items">
+    <div class="product__item">
+      <div class="item__col item__col-4 th">Название</div>
+      <div class="item__col item__col-4 th">Диаметр перекрываемого трубопровода, мм</div>
+      <div class="item__col item__col-4 th">Давление, МПа</div>
+      <div class="item__col item__col-4 th">Описание</div>
+    </div>
+    <div class="product__item" *ngFor="let item of products3">
+      <div class="item__col item__col-4">{{item.label}}</div>
+      <div
+        class="item__col item__col-4">{{item.diameterMin ? item.diameterMin + ' - ' : 'до '}}{{item.diameterMax}}</div>
+      <div class="item__col item__col-4">до {{item.pressure}}</div>
+      <div class="item__col item__col-4 description-col">{{item.description}}</div>
+    </div>
+  </div>
+
+</div>
+
+<div class="section">
+
+  <div class="section-title__wrapper">
+    <h4 class="products__title">Подробнее про STOPPLE</h4>
+  </div>
+
+  <div class="details">
+    <div class="details__item" *ngFor="let item of stoppleDetails">
+      <strong class="details__type">{{item.type}}</strong>
+
+      <span *ngIf="item.view === 'plain'">{{item.description}}</span>
+      <ul class="details__list" *ngIf="item.view === 'list'">
+        <li class="details__element" *ngFor="let el of item.description">{{el}}</li>
+      </ul>
+    </div>
+  </div>
+
 
 </div>

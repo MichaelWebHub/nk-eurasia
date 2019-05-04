@@ -83,8 +83,8 @@ $rem-px-only: false !default;
   overflow: hidden;
 }
 
-@mixin sectionHeading {
-  font-size: rem(90px);
+@mixin sectionHeading($fontSize: 90px) {
+  font-size: rem($fontSize);
   color: $dark;
   margin-bottom: 3rem;
   position: relative;
