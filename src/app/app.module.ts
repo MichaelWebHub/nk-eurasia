@@ -36,7 +36,6 @@ import {SwiperModule} from 'ngx-swiper-wrapper';
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
