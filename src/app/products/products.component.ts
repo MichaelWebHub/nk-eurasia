@@ -109,32 +109,20 @@ export class ProductsComponent implements OnInit, AfterViewInit {
 
   products1_images: { label: string; url: string }[] = [
     {
-      label: '760-TM_Plug-setting_134_sm_2014_ppt-G3',
+      label: 'TM-1200',
       url: './../assets/images/products/p1.png'
     },
     {
-      label: '1200-J--TM-clr-ppt-G3',
+      label: 'TM-2460',
       url: './../assets/images/products/p2.png'
     },
     {
-      label: '2460-pressure-balanced-Clr-FINAL_TMP-7829-sm-2012-ppt-G3',
+      label: 'TM-760',
       url: './../assets/images/products/p3.png'
     },
     {
-      label: 'SHORTSTOPP P-C 275-500 028-ppt-G3',
-      url: './../assets/images/products/p4.png'
-    },
-    {
-      label: 'SHORTSTOPP PE Stack-up-G3',
-      url: './../assets/images/products/p5.png'
-    },
-    {
-      label: 'STOPPLE Plugging Machine 621 2010-G3',
-      url: './../assets/images/products/p6.png'
-    },
-    {
-      label: 'STOPPLE Train white bkgrd-G3',
-      url: './../assets/images/products/p7.png'
+      label: 'T-101',
+      url: './../assets/images/products/p8.png'
     }
   ];
 
@@ -179,32 +167,20 @@ export class ProductsComponent implements OnInit, AfterViewInit {
 
   products2_images: { label: string; url: string }[] = [
     {
-      label: '760-TM_Plug-setting_134_sm_2014_ppt-G3',
-      url: './../assets/images/fittings/f1.png'
+      label: 'SHORTSTOPP 275',
+      url: './../assets/images/products/p4.png'
     },
     {
-      label: '1200-J--TM-clr-ppt-G3',
-      url: './../assets/images/fittings/f2.png'
+      label: 'SHORTSTOPP PE',
+      url: './../assets/images/products/p5.png'
     },
     {
-      label: '2460-pressure-balanced-Clr-FINAL_TMP-7829-sm-2012-ppt-G3',
-      url: './../assets/images/fittings/f3.png'
+      label: 'STOPPLE Plugging Machine',
+      url: './../assets/images/products/p6.png'
     },
     {
-      label: 'SHORTSTOPP P-C 275-500 028-ppt-G3',
-      url: './../assets/images/fittings/f4.png'
-    },
-    {
-      label: 'SHORTSTOPP PE Stack-up-G3',
-      url: './../assets/images/fittings/f5.png'
-    },
-    {
-      label: 'STOPPLE Plugging Machine 621 2010-G3',
-      url: './../assets/images/fittings/f6.png'
-    },
-    {
-      label: 'STOPPLE Train white bkgrd-G3',
-      url: './../assets/images/fittings/f7.png'
+      label: 'STOPPLE Train',
+      url: './../assets/images/products/p7.png'
     }
   ];
 
@@ -213,7 +189,7 @@ export class ProductsComponent implements OnInit, AfterViewInit {
       label: 'SHORTSTOPP® 300D',
       diameterMax: 300,
       pressure: 3.45,
-      description: 'Горячештампованные, которые могут быть патрубкового типа либо полнообхватные, с боковым отводом (3-WAY TEE) и без.'
+      description: 'Горячештампованные, патрубкового типа либо полнообхватные, с боковым отводом (3-WAY TEE) и без.'
     },
     {
       label: 'STOPPLE',
@@ -221,6 +197,45 @@ export class ProductsComponent implements OnInit, AfterViewInit {
       diameterMax: 1400,
       pressure: 15,
       description: 'Горячештампованные или сварные, патрубкового типа с накладкой и без, полнообхватные,  с боковым отводом (3-WAY TEE) и без, с резьбовой пробкой TREAD-O-RING, пробкой типа LOCK-O-RING и LOCK-O-RING PLUS.'
+    }
+  ];
+
+  products3_images: { label: string; url: string }[] = [
+    {
+      label: 'STOPPLE Fitting',
+      url: './../assets/images/fittings/f1.png'
+    },
+    {
+      label: 'LOCK-O-RING® Plus',
+      url: './../assets/images/fittings/f5.png'
+    },
+    {
+      label: 'SHORTSTOPP® 300D',
+      url: './../assets/images/fittings/f2.png'
+    },
+    {
+      label: 'SHORTSTOP II',
+      url: './../assets/images/fittings/f3.png'
+    },
+    {
+      label: '300D Spherical',
+      url: './../assets/images/fittings/f4.png'
+    },
+    {
+      label: 'SHORTSTOPP Bolt-On 4x4',
+      url: './../assets/images/fittings/f6.png'
+    },
+    {
+      label: 'SHORTSTOPP Flat-Bottom Tee',
+      url: './../assets/images/fittings/f7.png'
+    },
+    {
+      label: 'SHORTSTP 300D Split Tee',
+      url: './../assets/images/fittings/f8.png'
+    },
+    {
+      label: 'SS Weld Fitting',
+      url: './../assets/images/fittings/f9.png'
     }
   ];
 
@@ -242,14 +257,14 @@ export class ProductsComponent implements OnInit, AfterViewInit {
     {
       type: 'Фитинги с отводами уменьшенного диаметра.',
       view: 'plain',
-      description: 'Фитинги, изготовлены путем штамповки из листового металла. Затем на отвод приваривается фланец типа LOCK-O-RING® или LOCK-O-RING® PLUS уменьшенного диаметра и класса, или фланец любого другого требуемого стандарта.'
+      description: 'Фитинги, изготовлены путем штамповки из листового металла. Затем на отвод приваривается фланец типа LOCK-O-RING® или LOCK-O-RING® PLUS уменьшенного диаметра и фланец любого другого требуемого стандарта.'
     },
     {
       type: 'Фитинг STOPPLE® Plus',
       view: 'list',
       description: [
         'Полно охватный фитинг, предназначенный для врезок и перекрытия сечения трубопровода под давлением',
-        'Тип фланца - LOCK-O-RING Plus',
+        'Тип фланца - LOCK-O-RING® Plus',
         'Фитинги данного типа не имеют отверстий во фланцах, что позволяет исключить потенциальные утечки',
         'Система фиксации пробки с раздвижными сегментами, позволяет зафиксировать пробку внутри фланца',
         'Диаметры, дюйм: 4 “ – 28”'

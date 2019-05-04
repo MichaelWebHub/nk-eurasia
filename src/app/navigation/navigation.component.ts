@@ -21,10 +21,6 @@ export class NavigationComponent implements OnInit {
       url: '/services'
     },
     {
-      label: 'Документы',
-      url: '/documents'
-    },
-    {
       label: 'Контакты',
       url: '/contacts'
     }

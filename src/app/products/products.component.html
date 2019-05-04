@@ -28,7 +28,8 @@
     <div class="swiper-container" [swiper]="config">
       <div class="swiper-wrapper">
         <div class="swiper-slide" *ngFor="let item of products1_images">
-          <img class="product__image-photo" [src]="item.url" alt="">
+          <img class="product__image-photo" [src]="item.url" [alt]="item.label">
+          <h4 class="product__image-label">{{item.label}}</h4>
         </div>
       </div>
     </div>
@@ -55,7 +56,7 @@
 <div class="section">
 
   <div class="section-title__wrapper">
-    <h4 class="products__title">Задвижки</h4>
+    <h4 class="products__title">Системы для перекрытия</h4>
   </div>
 
   <div class="products__description">
@@ -65,10 +66,6 @@
       модификаций без прерывания функционирования. Система для перекрытия состоит из гидравлических цилиндров, адаптеров
       и перекрывающих головок.
     </p>
-    <p class="description">
-      Задвижки типа «SHORTCUT», а также «SANDWICH» диаметром до 500 мм имеют ручной, а более 500 мм гидравлический
-      привод.
-    </p>
   </div>
 
   <div class="product__gallery">
@@ -76,7 +73,8 @@
     <div class="swiper-container" [swiper]="config">
       <div class="swiper-wrapper">
         <div class="swiper-slide" *ngFor="let item of products2_images">
-          <img class="product__image-photo" [src]="item.url" alt="">
+          <img class="product__image-photo" [src]="item.url" [alt]="item.label">
+          <h4 class="product__image-label">{{item.label}}</h4>
         </div>
       </div>
     </div>
@@ -96,12 +94,30 @@
     </div>
   </div>
 
+  <p class="description after">
+    Задвижки типа «SHORTCUT», а также «SANDWICH» диаметром до 500 мм имеют ручной, а более 500 мм гидравлический
+    привод.
+  </p>
+
 </div>
 
 <div class="section">
 
   <div class="section-title__wrapper">
     <h4 class="products__title">Фитинги</h4>
+  </div>
+
+  <div class="product__gallery">
+
+    <div class="swiper-container" [swiper]="config">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" *ngFor="let item of products3_images">
+          <img class="product__image-photo" [src]="item.url" [alt]="item.label">
+          <h4 class="product__image-label">{{item.label}}</h4>
+        </div>
+      </div>
+    </div>
+
   </div>
 
   <div class="products__items">
@@ -125,7 +141,7 @@
 <div class="section">
 
   <div class="section-title__wrapper">
-    <h4 class="products__title">Подробнее про STOPPLE</h4>
+    <h4 class="products__title">Подробнее про фитинги STOPPLE</h4>
   </div>
 
   <div class="details">

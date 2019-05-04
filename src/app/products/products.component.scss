@@ -45,7 +45,10 @@
   padding: 0.5rem;
   border-right: 1px solid $darkOpacity;
   border-left: 1px solid $darkOpacity;
-  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .item__col:nth-of-type(n + 2) {
@@ -78,6 +81,10 @@
   font-size: 1rem;
   line-height: 1.3;
   margin-bottom: 1rem;
+}
+
+.description.after {
+  margin-top: 1rem;
 }
 
 .description:last-of-type {
@@ -148,4 +155,14 @@
 
 .product__image-photo {
   width: 320px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.product__image-label {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: $dark;
+  text-align: center;
 }
