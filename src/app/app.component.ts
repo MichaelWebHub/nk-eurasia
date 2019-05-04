@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {NavigationStart, Router} from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Eurasia';
+
+  constructor(private _router: Router) {
+    _router.events.subscribe((event) => {
+      if (event instanceof NavigationStart) {
+        window.scrollTo(0, 0);
+      }
+    });
+  }
 }

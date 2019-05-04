@@ -112,20 +112,26 @@
   margin-top: 2rem;
   width: 100%;
   overflow: auto;
-  position: relative;
+  cursor: move;
 }
 
 .gallery-cursor {
+  display: none;
   position: absolute;
   z-index: 5;
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: #333;
+  background: $dark1Opacity;
 
-  display: flex;
   align-items: center;
   justify-content: center;
+
+  transition: 0.15s;
+}
+
+.gallery-cursor.show {
+  display: flex;
 }
 
 .product__gallery-inner {

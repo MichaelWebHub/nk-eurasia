@@ -1,4 +1,4 @@
-import {AfterViewInit, Component, HostListener, OnInit} from '@angular/core';
+import {AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild, ViewChildren} from '@angular/core';
 import {SwiperConfigInterface} from 'ngx-swiper-wrapper';
 
 export interface IProduct {
@@ -24,8 +24,7 @@ export class ProductsComponent implements OnInit, AfterViewInit {
     freeMode: true,
     mousewheel: true,
     autoplay: {
-      delay: 10000,
-      disableOnInteraction: false,
+      delay: 5000
     }
   };
 
