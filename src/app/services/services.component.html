@@ -3,9 +3,32 @@
 </div>
 
 <div class="section">
-
   <div class="section-title__wrapper">
     <h2 class="section__title trigger">Услуги</h2>
+  </div>
+</div>
+
+<div class="section">
+
+  <div class="service__group" *ngFor="let item of services">
+
+    <div class="line"></div>
+
+    <div class="group">
+      <div class="service__group-items">
+        <div class="service" *ngFor="let service of item.names">
+
+          <h4 class="service__name">
+            <span class="service__name-number">{{service.number}}.</span>
+            <span>{{service.name}}</span>
+          </h4>
+
+        </div>
+      </div>
+
+      <p class="service__group-description">{{item.description}}</p>
+    </div>
+
   </div>
 
 </div>
