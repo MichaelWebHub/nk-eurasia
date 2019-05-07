@@ -64,6 +64,10 @@
   margin-top: 2rem;
 }
 
+.service__group-description.no-margin {
+  margin-top: 0;
+}
+
 .service__group-items {
   font-size: rem(18px);
   color: $dark;
