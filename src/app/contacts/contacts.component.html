@@ -26,7 +26,7 @@
       <address class="address__label"> Москва, Россия, Профсоюзная улица, 3, 117036. Офис 720 </address>
 
       <h4 class="address__heading">Обратная связь:</h4>
-      <form id="form" #form="ngForm" (submit)="onSubmit()">
+      <form id="form" #form="ngForm" (submit)="onSubmit(form)">
 
         <div class="form__row">
           <input type="email" class="form__input" name="email" ngModel placeholder="Email" required>
@@ -36,8 +36,12 @@
           <textarea class="form__input" name="message" ngModel placeholder="Сообщение" required></textarea>
         </div>
 
-        <div class="form__row">
+        <div class="form__row form__row--submit">
           <button class="form__submit" [attr.data-content]="'Отправить'" [disabled]="form.invalid">Отправить</button>
+
+          <div class="preloader" *ngIf="showPreloader">
+            <div class="circle"></div>
+          </div>
         </div>
 
         <div class="form__row">
