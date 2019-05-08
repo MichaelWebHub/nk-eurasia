@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {SwiperConfigInterface} from 'ngx-swiper-wrapper';
 
 @Component({
   selector: 'app-services',
@@ -64,10 +65,38 @@ export class ServicesComponent implements OnInit {
     }
   ];
 
+  service_images: { label: string; url: string }[] = [
+    {
+      label: 'Врезка под давлением через кран заказчика (1)',
+      url: './../assets/images/services/2.png'
+    },
+    {
+      label: 'Врезка под давлением через кран заказчика (1)',
+      url: './../assets/images/services/3.png'
+    },
+    {
+      label: 'Двойное односторонее или двусторонее перекрытие (6)',
+      url: './../assets/images/services/1.png'
+    }
+  ];
+
+  config: SwiperConfigInterface = {
+    slidesPerView: 'auto',
+    centeredSlides: false,
+    freeMode: true,
+    mousewheel: true,
+    autoplay: {
+      delay: 5000
+    }
+  };
+
   constructor() {
   }
 
   ngOnInit() {
+    if (window.innerWidth < 1440) {
+      this.config.slidesPerView = 3;
+    }
   }
 
 }

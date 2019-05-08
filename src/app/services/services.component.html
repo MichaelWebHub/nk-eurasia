@@ -10,48 +10,62 @@
 
 <div class="section">
 
-  <div class="service__group" *ngFor="let item of services">
+  <div class="section__row">
 
-    <div class="line"></div>
+    <div class="section__services">
+      <div class="service__group" *ngFor="let item of services">
 
-    <div class="group">
-      <div class="service__group-items">
-        <div class="service" *ngFor="let service of item.names">
+        <div class="line"></div>
 
-          <h4 class="service__name">
-            <span class="service__name-number">{{service.number}}.</span>
-            <span>{{service.name}}</span>
-          </h4>
+        <div class="group">
+          <div class="service__group-items">
+            <div class="service" *ngFor="let service of item.names">
 
+              <h4 class="service__name">
+                <span class="service__name-number">{{service.number}}.</span>
+                <span>{{service.name}}</span>
+              </h4>
+
+            </div>
+          </div>
+
+          <p class="service__group-description">{{item.description}}</p>
         </div>
+
       </div>
 
-      <p class="service__group-description">{{item.description}}</p>
+      <div class="service__group">
+        <div class="line"></div>
+
+        <div class="group">
+          <p class="service__group-description no-margin">
+            В рамках услуг по врезкам под давлением, ООО НК «Евразия» предоставляет ТКП с обоснованием технологических
+            решений, а также занимается разработкой Проектов Производства Работ (ППР) на специальные виды работ по
+            технологии
+            T.D.Williamson.
+          </p>
+          <p class="service__group-description">
+            Отдельным направлением деятельности нашей компании можно считать поставку запчастей и проведение технического
+            обслуживания оборудования для врезки и перекрытия T.D.Williamson у заказчика, а также проведение интенсивных
+            курсов по работе с оборудованием для врезок и перекрытия трубопроводов (STOPPLE® и SHORTSTOPP®) и по установке
+            композитных муфт RES-Q ®
+          </p>
+          <p class="service__group-description">
+            Места обучения: специальные учебные центры в Бельгии, США и России. Возможность обучения по месту нахождения заказчика.
+          </p>
+        </div>
+
+      </div>
     </div>
 
-  </div>
+    <div class="service__gallery">
 
-  <div class="service__group">
-    <div class="line"></div>
+      <div class="service__image" *ngFor="let item of service_images">
+        <img class="service__image-photo" [src]="item.url" [alt]="item.label">
+        <h4 class="service__image-label">{{item.label}}</h4>
+      </div>
 
-    <div class="group">
-      <p class="service__group-description no-margin">
-        В рамках услуг по врезкам под давлением, ООО НК «Евразия» предоставляет ТКП с обоснованием технологических
-        решений, а также занимается разработкой Проектов Производства Работ (ППР) на специальные виды работ по
-        технологии
-        T.D.Williamson.
-      </p>
-      <p class="service__group-description">
-        Отдельным направлением деятельности нашей компании можно считать поставку запчастей и проведение технического
-        обслуживания оборудования для врезки и перекрытия T.D.Williamson у заказчика, а также проведение интенсивных
-        курсов по работе с оборудованием для врезок и перекрытия трубопроводов (STOPPLE® и SHORTSTOPP®) и по установке
-        композитных муфт RES-Q ®
-      </p>
-      <p class="service__group-description">
-        Места обучения: специальные учебные центры в Бельгии, США и России. Возможность обучения по месту нахождения заказчика.
-      </p>
     </div>
-
   </div>
 
 </div>

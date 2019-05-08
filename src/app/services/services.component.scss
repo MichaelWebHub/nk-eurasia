@@ -12,6 +12,10 @@
   padding-bottom: 2.5rem;
 }
 
+.section__row {
+  display: flex;
+}
+
 .section-title__wrapper {
   @include sectionHeadingWrapper();
 }
@@ -86,4 +90,35 @@
 .service__name-number {
   font-weight: 500;
   margin-right: 1rem;
+}
+
+.service__gallery {
+  padding-left: 3rem;
+  margin-top: 2rem;
+  width: 100%;
+  overflow: auto;
+  cursor: move;
+}
+
+.service__image {
+  margin-bottom: 3rem;
+}
+
+.service__image:last-of-type {
+  margin-bottom: 0;
+}
+
+.service__image-photo {
+  width: 280px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.service__image-label {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: $dark;
+  text-align: center;
+  font-weight: 400;
 }
