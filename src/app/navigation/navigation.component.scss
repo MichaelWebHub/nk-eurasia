@@ -39,3 +39,12 @@
   from {opacity: 0}
   to {opacity: 1}
 }
+
+.nav__link--logo {
+  cursor: pointer;
+  margin-right: 2rem;
+}
+
+.logo {
+  width: rem(100px);
+}
