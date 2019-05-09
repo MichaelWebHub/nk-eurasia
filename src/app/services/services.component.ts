@@ -77,6 +77,14 @@ export class ServicesComponent implements OnInit {
     {
       label: 'Двойное односторонее или двусторонее перекрытие (6)',
       url: './../assets/images/services/1.png'
+    },
+    {
+      label: 'Врезка под давлением через фитинг с боковым отводом типа 3-WAYTEE (2)',
+      url: './../assets/images/services/4.png'
+    },
+    {
+      label: 'Врезка под давлением через фитинг с боковым отводом типа 3-WAYTEE (2)',
+      url: './../assets/images/services/5.png'
     }
   ];
 
