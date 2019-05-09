@@ -105,10 +105,14 @@
 }
 
 .service__image-photo {
-  width: 280px;
+  width: 240px;
   display: block;
   margin: 0 auto;
   text-align: center;
+}
+
+.service__image-photo.sm {
+  width: 160px;
 }
 
 .service__image-label {

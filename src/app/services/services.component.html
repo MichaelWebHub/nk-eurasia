@@ -60,8 +60,8 @@
 
     <div class="service__gallery">
 
-      <div class="service__image" *ngFor="let item of service_images">
-        <img class="service__image-photo" [src]="item.url" [alt]="item.label">
+      <div class="service__image" *ngFor="let item of service_images; let i = index">
+        <img class="service__image-photo" [class.sm]="i !== 2" [src]="item.url" [alt]="item.label">
         <h4 class="service__image-label">{{item.label}}</h4>
       </div>
 
