@@ -13,7 +13,7 @@ export class NavigationComponent implements OnInit {
       url: '/home'
     },
     {
-      label: 'Оборудование',
+      label: 'Продукты',
       url: '/products'
     },
     {

@@ -109,20 +109,20 @@ export class ProductsComponent implements OnInit, AfterViewInit {
 
   products1_images: { label: string; url: string }[] = [
     {
-      label: 'TM-1200',
-      url: './../assets/images/products/p1.png'
-    },
-    {
-      label: 'TM-2460',
-      url: './../assets/images/products/p2.png'
+      label: 'T-101',
+      url: './../assets/images/products/p8.png'
     },
     {
       label: 'TM-760',
       url: './../assets/images/products/p3.png'
     },
     {
-      label: 'T-101',
-      url: './../assets/images/products/p8.png'
+      label: 'TM-1200',
+      url: './../assets/images/products/p1.png'
+    },
+    {
+      label: 'TM-2460',
+      url: './../assets/images/products/p2.png'
     }
   ];
 
@@ -257,13 +257,13 @@ export class ProductsComponent implements OnInit, AfterViewInit {
     {
       type: 'Фитинги с отводами уменьшенного диаметра.',
       view: 'plain',
-      description: 'Фитинги, изготовлены путем штамповки из листового металла. Затем на отвод приваривается фланец типа LOCK-O-RING® или LOCK-O-RING® PLUS уменьшенного диаметра и фланец любого другого требуемого стандарта.'
+      description: 'Фитинги, изготовлены путем штамповки из листового металла. Затем на отвод приваривается фланец уменьшенного диаметра типа LOCK-O-RING® или LOCK-O-RING® PLUS требуемого стандарта.'
     },
     {
       type: 'Фитинг STOPPLE® Plus',
       view: 'list',
       description: [
-        'Полно охватный фитинг, предназначенный для врезок и перекрытия сечения трубопровода под давлением',
+        'Полнообхватный фитинг, предназначенный для врезок и перекрытия сечения трубопровода под давлением',
         'Тип фланца - LOCK-O-RING® Plus',
         'Фитинги данного типа не имеют отверстий во фланцах, что позволяет исключить потенциальные утечки',
         'Система фиксации пробки с раздвижными сегментами, позволяет зафиксировать пробку внутри фланца',

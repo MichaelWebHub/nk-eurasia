@@ -15,7 +15,7 @@ export class FooterComponent implements OnInit {
       url: '/home'
     },
     {
-      label: 'Оборудование',
+      label: 'Продукты',
       url: '/products'
     },
     {

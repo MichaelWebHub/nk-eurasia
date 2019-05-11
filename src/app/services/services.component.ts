@@ -71,20 +71,20 @@ export class ServicesComponent implements OnInit {
       url: './../assets/images/services/2.png'
     },
     {
-      label: 'Врезка под давлением через кран заказчика (1)',
+      label: 'Окончательный вид подключенного отвода через кран заказчика (1)',
       url: './../assets/images/services/3.png'
-    },
-    {
-      label: 'Двойное односторонее или двусторонее перекрытие (6)',
-      url: './../assets/images/services/1.png'
-    },
-    {
-      label: 'Врезка под давлением через фитинг с боковым отводом типа 3-WAYTEE (2)',
-      url: './../assets/images/services/4.png'
     },
     {
       label: 'Врезка под давлением через фитинг с боковым отводом типа 3-WAYTEE (2)',
       url: './../assets/images/services/5.png'
+    },
+    {
+      label: 'Окончательный вид подключенного отвода через фитинг с боковым отводом типа 3-WAYTEE (2)',
+      url: './../assets/images/services/4.png'
+    },
+    {
+      label: 'Двустороннее перекрытие трубопровода с организацией отдельного байпаса (4)',
+      url: './../assets/images/services/1.png'
     }
   ];
 

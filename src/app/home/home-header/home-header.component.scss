@@ -23,16 +23,16 @@
 }
 
 .filter__header {
-  height: rem(300px);
+  height: rem(250px);
   background: $light;
   margin-top: auto;
-  width: 70%;
+  width: 80%;
   padding: 2.5rem 5rem;
   animation: 0.5s expand ease-in;
 }
 
 .header__title {
-  font-size: rem(104px);
+  font-size: rem(65px);
   color: $dark;
   overflow: hidden;
 }
