@@ -49,11 +49,14 @@
 html, body {
   cursor: default;
   font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
 }
 
 body {
   background: $light;
+  width: 100%;
   max-width: 1920px;
+  min-width: 320px;
   margin: 0 auto;
 }
 
@@ -68,4 +71,10 @@ a {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+@media (max-width: 1199px) {
+  html, body {
+    font-size: 14px;
+  }
 }

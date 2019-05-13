@@ -72,9 +72,7 @@
   font-size: rem(14px);
 }
 
-.products__description {
-
-}
+.products__description {}
 
 .description {
   color: $dark;
@@ -154,15 +152,29 @@
 }
 
 .product__image-photo {
-   width: 320px;
-   display: block;
-   margin: 0 auto;
-   text-align: center;
- }
+  width: 320px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
 
 .product__image-label {
   margin-top: 1rem;
   font-size: 1rem;
   color: $dark;
   text-align: center;
+}
+
+@media (max-width: 1199px) {
+  .section__title {
+    @include sectionHeading($fontSize: 65px);
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .section__title {
+    @include sectionHeading($fontSize: 55px);
+    margin-bottom: 0;
+  }
 }

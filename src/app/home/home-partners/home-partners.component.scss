@@ -35,3 +35,15 @@
 .partner__logo {
   width: 100%;
 }
+
+@media (max-width: 1199px) {
+  .section__title {
+    @include sectionHeading($fontSize: 65px);
+  }
+}
+
+@media (max-width: 768px) {
+  .section__title {
+    @include sectionHeading($fontSize: 55px);
+  }
+}

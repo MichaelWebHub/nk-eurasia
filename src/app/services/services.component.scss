@@ -122,3 +122,17 @@
   text-align: center;
   font-weight: 400;
 }
+
+@media (max-width: 1199px) {
+  .section__title {
+    @include sectionHeading($fontSize: 65px);
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .section__title {
+    @include sectionHeading($fontSize: 55px);
+    margin-bottom: 0;
+  }
+}

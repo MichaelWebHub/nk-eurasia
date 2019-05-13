@@ -7,3 +7,9 @@
 .section:last-of-type {
   padding-bottom: 5rem;
 }
+
+@media (max-width: 768px) {
+  .section {
+    padding: 2rem 2.5rem 0;
+  }
+}

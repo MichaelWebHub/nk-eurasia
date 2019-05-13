@@ -52,3 +52,9 @@
   text-align: center;
   color: $light;
 }
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 1.5rem 2.5rem 1.5rem;
+  }
+}

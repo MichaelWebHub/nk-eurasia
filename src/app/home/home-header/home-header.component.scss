@@ -1,7 +1,8 @@
 @import "../../_utils/index";
 
 .section__video {
-  max-height: 100vh;
+  // max-height: 100vh;
+  height: 100vh;
   position: relative;
   overflow: hidden;
 }
@@ -23,7 +24,6 @@
 }
 
 .filter__header {
-  height: rem(250px);
   background: $light;
   margin-top: auto;
   width: 80%;
@@ -102,4 +102,20 @@
 @keyframes textAppear {
   from {transform: translateY(100%)}
   to {transform: translateY(0)}
+}
+
+@media (max-width: 1199px) {
+  .header__title {
+    line-height: 1; 
+  }
+}
+
+@media (max-width: 768px) {
+  .filter__header {
+    width: 100%;
+    padding: 2.5rem 2.5rem 1.5rem;
+  }
+  .header__title {
+    font-size: rem(55px);
+  }
 }
