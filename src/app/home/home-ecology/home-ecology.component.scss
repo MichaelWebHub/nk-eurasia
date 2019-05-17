@@ -4,6 +4,10 @@
   @include sectionHeadingWrapper();
 }
 
+.section-title__wrapper.mobile {
+  display: none;
+}
+
 .section__title {
   @include sectionHeading();
 }
@@ -54,6 +58,12 @@
 .timeline__economy {
   width: calc(50% - 25px);
   padding-left: 2rem;
+}
+
+.timeline__economy.mobile {
+  display: none;
+  width: 100%;
+  padding-left: 0;
 }
 
 .timeline__text {
@@ -130,5 +140,32 @@
   }
   .timeline__economy {
     width: calc(50% - 15px);
+  }
+}
+
+@media (max-width: 767px) {
+  .timeline__row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .timeline__center {
+    display: none;
+  }
+  .center-circle {
+    display: none;
+  }
+  .timeline__economy {
+    display: none;
+  }
+  .timeline__ecology {
+    width: 100%;
+    padding-right: 0;
+  }
+  .section-title__wrapper.mobile {
+    display: block;
+  }
+  .timeline__economy.mobile {
+    display: block;
   }
 }

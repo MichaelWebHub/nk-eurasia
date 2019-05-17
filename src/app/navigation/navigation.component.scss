@@ -48,3 +48,27 @@
 .logo {
   width: rem(100px);
 }
+
+@media (max-width: 767px) {
+  .navigation {
+    padding: 1.5rem 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navigation {
+    flex-wrap: wrap;
+  }
+  .nav__link--logo {
+    width: 100%;
+    margin: 0 0 1rem;
+    text-align: center;
+  }
+  .nav__link {
+    flex: 0 0 25%;
+    min-width: 25%;
+    margin: 0;
+    padding: 0 5px;
+    text-align: center;
+  }
+}

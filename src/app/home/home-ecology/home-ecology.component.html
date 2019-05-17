@@ -25,6 +25,18 @@
     <div class="timeline__economy">
       <p class="timeline__text">{{item.economy}}</p>
     </div>
+    <!-- <div class="timeline__economy-mobile">
+      <p class="timeline__text">{{item.economy}}</p>
+    </div> -->
+  </div>
+
+  <div class="section-title__wrapper mobile">
+    <h2 class="section__title section__title--blur">Экономика</h2>
+    <div class="timeline__row" *ngFor="let item of list; let i = index">
+      <div class="timeline__economy mobile">
+        <p class="timeline__text">{{item.economy}}</p>
+      </div>
+    </div>
   </div>
 
 </div>

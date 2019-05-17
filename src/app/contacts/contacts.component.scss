@@ -44,8 +44,7 @@
 }
 
 .address__map {
-  width: rem(400px);
-  height: rem(400px);
+
 }
 
 .address__text {
@@ -133,9 +132,27 @@ textarea.form__input {
   }
 }
 
+@media (max-width: 1023px) {
+  .address {
+    flex-direction: column;
+  }
+  .address__text {
+    padding: 0 0 1.5rem;
+  }
+  .address__map {
+    order: 2;
+  }
+}
+
 @media (max-width: 768px) {
   .section__title {
     @include sectionHeading($fontSize: 55px);
     margin-bottom: 0;
+  }
+  .section {
+    padding: 2.5rem 2.5rem 1.5rem;
+    &.header {
+      padding-bottom: 0;
+    }
   }
 }

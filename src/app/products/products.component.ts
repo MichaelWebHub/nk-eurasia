@@ -280,6 +280,12 @@ export class ProductsComponent implements OnInit, AfterViewInit {
     if (window.innerWidth < 1440) {
       this.config.slidesPerView = 3;
     }
+    if (window.innerWidth < 1024) {
+      this.config.slidesPerView = 2;
+    } 
+    if (window.innerWidth < 480) {
+      this.config.slidesPerView = 1;
+    }
 
   }
 

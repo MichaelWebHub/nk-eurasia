@@ -11,7 +11,7 @@
 .numbers {
   display: flex;
   align-items: center;
-  margin: -2rem;
+  margin: -1rem;
 }
 
 .number {
@@ -107,6 +107,12 @@
   to {transform: rotate(230deg)}
 }
 
+@media (max-width: 1579px) {
+  .number__value--label {
+    font-size: rem(50px);
+  }
+}
+
 @media (max-width: 1199px) {
   .number__value--label {
     font-size: rem(35px);
@@ -131,5 +137,12 @@
     &:nth-child(3) {
       order: 1;
     }
+  }
+}
+
+@media (max-width: 480px) {
+  .section__title {
+    @include sectionHeading($fontSize: 50px);
+    line-height: 1;
   }
 }

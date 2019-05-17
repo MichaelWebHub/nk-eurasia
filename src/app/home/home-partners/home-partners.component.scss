@@ -11,10 +11,11 @@
 .partners {
   display: flex;
   align-items: flex-end;
+  width: 100%;
 }
 
 .partner {
-  width: 25%;
+  flex: 0 0 25%;
   height: 100%;
 }
 
@@ -45,5 +46,15 @@
 @media (max-width: 768px) {
   .section__title {
     @include sectionHeading($fontSize: 55px);
+  }
+}
+
+@media (max-width: 480px) {
+  .partners {
+    flex-wrap: wrap;
+  }
+  .partner {
+    flex: 0 0 50%;
+    margin-bottom: 3rem;
   }
 }

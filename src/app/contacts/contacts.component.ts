@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, ViewChild, ElementRef} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import * as emailjs from 'emailjs-com';
 
@@ -12,10 +12,19 @@ export class ContactsComponent implements OnInit {
   status: boolean;
   showPreloader = false;
 
+  @ViewChild('frame') frame: ElementRef; 
+
   constructor(private _http: HttpClient) {
   }
 
   ngOnInit() {
+    if (window.innerWidth <= 768) {
+      this.frame.nativeElement.style.width = '300px';
+      this.frame.nativeElement.style.height = '300px';
+    } else if (window.innerWidth <= 480) {
+      this.frame.nativeElement.style.width = '250px';
+      this.frame.nativeElement.style.height = '250px';
+    }
   }
 
   onSubmit(form): void {

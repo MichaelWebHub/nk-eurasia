@@ -3,13 +3,11 @@
 </div>
 
 <div class="partners">
+    <div class="partner" *ngFor="let item of partners">
+    
+      <a [href]="item.url" target="_blank" class="partner__link">
+        <img class="partner__logo" [src]="item.image" [alt]="item.alt" [title]="item.title">
+      </a>
 
-  <div class="partner" *ngFor="let item of partners">
-
-    <a [href]="item.url" target="_blank" class="partner__link">
-      <img class="partner__logo" [src]="item.image" [alt]="item.alt" [title]="item.title">
-    </a>
-
+    </div>
   </div>
-
-</div>

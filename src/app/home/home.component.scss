@@ -13,3 +13,9 @@
     padding: 2rem 2.5rem 0;
   }
 }
+
+@media (max-width: 480px) {
+  .section:last-of-type {
+    padding-bottom: 2.5rem;
+  }
+}
