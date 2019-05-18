@@ -40,9 +40,11 @@ export class HomeEcologyComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    setTimeout(() => {
-      this.generateLine(this.list, this.timeline);
-    }, 500);
+    if (window.innerWidth >= 768) {
+      setTimeout(() => {
+        this.generateLine(this.list, this.timeline);
+      }, 500);
+    }
 
   }
 
@@ -69,7 +71,9 @@ export class HomeEcologyComponent implements OnInit, AfterViewInit {
 
   @HostListener('window:resize')
   onResize(): void {
-    this.generateLine(this.list, this.timeline);
+    if (window.innerWidth >= 768) {
+      this.generateLine(this.list, this.timeline);
+    }
   }
 
 }

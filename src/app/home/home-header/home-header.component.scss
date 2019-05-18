@@ -118,4 +118,20 @@
   .header__title {
     font-size: rem(55px);
   }
+
+  .section__video {
+    height: auto;
+  }
+
+  .section__video-player {
+    display: none;
+  }
+
+  .video__filter {
+    position: static;
+  }
+
+  .filter__header {
+    margin-top: 0;
+  }
 }
