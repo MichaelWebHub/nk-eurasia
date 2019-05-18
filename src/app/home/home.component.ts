@@ -23,9 +23,9 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   @HostListener('document:scroll')
   onScroll(): void {
-
     this.sections.forEach((section: HTMLDivElement) => {
-      if (document.documentElement.scrollTop + this.animationOffset >= section.offsetTop) {
+      const el = document.scrollingElement || document.documentElement;
+      if (el.scrollTop + this.animationOffset >= section.offsetTop) {
         section.classList.add('trigger');
       }
     });

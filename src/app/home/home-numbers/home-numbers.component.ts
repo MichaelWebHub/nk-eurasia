@@ -25,7 +25,8 @@ export class HomeNumbersComponent implements OnInit, AfterViewInit {
 
   @HostListener('document:scroll')
   onScroll(): void {
-    if (document.documentElement.scrollTop + this.animationOffset >= this.title.nativeElement.offsetTop) {
+    const el = document.scrollingElement || document.documentElement;
+    if (el.scrollTop + this.animationOffset >= this.title.nativeElement.offsetTop) {
       this.animationBlocks.forEach((block: SVGElement) => {
         block.classList.add('trigger');
       });
