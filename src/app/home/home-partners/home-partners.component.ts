@@ -32,6 +32,24 @@ export class HomePartnersComponent implements OnInit {
       url: 'https://www.sibur.ru/',
       title: 'Сибур'
     },
+    {
+      image: '../../assets/images/partners/mosgaz.png',
+      alt: 'Мосгаз',
+      url: 'http://www.mos-gaz.ru/',
+      title: 'Мосгаз'
+    },
+    {
+      image: '../../assets/images/partners/gazprom_gazoraspredelenie.png',
+      alt: 'АО Газпром газораспределение',
+      url: 'http://gazoraspredelenie.gazprom.ru/',
+      title: 'АО Газпром газораспределение'
+    },
+    {
+      image: '../../assets/images/partners/mosoblgaz.png',
+      alt: 'Мособлгаз',
+      url: 'https://mosoblgaz.ru/',
+      title: 'Мособлгаз'
+    },
   ];
 
   constructor() {

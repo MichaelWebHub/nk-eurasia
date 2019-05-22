@@ -10,7 +10,8 @@
 
 .partners {
   display: flex;
-  align-items: flex-end;
+  flex-wrap: wrap;
+  align-items: center;
   width: 100%;
 }
 

@@ -128,37 +128,37 @@ export class ProductsComponent implements OnInit, AfterViewInit {
 
   products2: IProduct[] = [
     {
-      label: 'SHORTSTOPP 275',
+      label: 'SHORTSTOPP® 275',
       diameterMin: 100,
       diameterMax: 300,
       pressure: 1.9
     },
     {
-      label: 'SHORTSTOPP 500',
+      label: 'SHORTSTOPP® 500',
       diameterMin: 38,
       diameterMax: 300,
       pressure: 3.45
     },
     {
-      label: 'SHORTSTOPP II',
+      label: 'SHORTSTOPP® II',
       diameterMin: 32,
       diameterMax: 300,
       pressure: 1
     },
     {
-      label: 'SHORTSTOPP PE',
+      label: 'SHORTSTOPP® PE',
       diameterMin: 100,
       diameterMax: 300,
       pressure: 0.9
     },
     {
-      label: 'STOPPLE',
+      label: 'STOPPLE®',
       diameterMin: 100,
       diameterMax: 1200,
       pressure: 10.2
     },
     {
-      label: 'STOPPLE TRAIN',
+      label: 'STOPPLE TRAIN®',
       diameterMin: 100,
       diameterMax: 900,
       pressure: 10.2
@@ -167,19 +167,19 @@ export class ProductsComponent implements OnInit, AfterViewInit {
 
   products2_images: { label: string; url: string }[] = [
     {
-      label: 'SHORTSTOPP 275',
+      label: 'SHORTSTOPP® 275',
       url: './../assets/images/products/p4.png'
     },
     {
-      label: 'SHORTSTOPP PE',
+      label: 'SHORTSTOPP® PE',
       url: './../assets/images/products/p5.png'
     },
     {
-      label: 'STOPPLE Plugging Machine',
+      label: 'STOPPLE® Plugging Machine',
       url: './../assets/images/products/p6.png'
     },
     {
-      label: 'STOPPLE Train',
+      label: 'STOPPLE Train®',
       url: './../assets/images/products/p7.png'
     }
   ];
@@ -192,7 +192,7 @@ export class ProductsComponent implements OnInit, AfterViewInit {
       description: 'Горячештампованные, патрубкового типа либо полнообхватные, с боковым отводом (3-WAY TEE) и без.'
     },
     {
-      label: 'STOPPLE',
+      label: 'STOPPLE®',
       diameterMin: 50,
       diameterMax: 1400,
       pressure: 15,
@@ -202,7 +202,7 @@ export class ProductsComponent implements OnInit, AfterViewInit {
 
   products3_images: { label: string; url: string }[] = [
     {
-      label: 'STOPPLE Fitting',
+      label: 'STOPPLE® Fitting',
       url: './../assets/images/fittings/f1.png'
     },
     {
@@ -222,11 +222,11 @@ export class ProductsComponent implements OnInit, AfterViewInit {
       url: './../assets/images/fittings/f4.png'
     },
     {
-      label: 'SHORTSTOPP Bolt-On 4x4',
+      label: 'SHORTSTOPP® Bolt-On 4x4',
       url: './../assets/images/fittings/f6.png'
     },
     {
-      label: 'SHORTSTOPP Flat-Bottom Tee',
+      label: 'SHORTSTOPP® Flat-Bottom Tee',
       url: './../assets/images/fittings/f7.png'
     },
     {
