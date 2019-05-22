@@ -27,7 +27,6 @@
 
 .products__items {
   margin-top: 2rem;
-  overflow: scroll;
 }
 
 .product__item {
@@ -185,5 +184,9 @@
     &.header {
       padding-bottom: 0;
     }
+  }
+
+  .products__items {
+    overflow-x: scroll;
   }
 }
