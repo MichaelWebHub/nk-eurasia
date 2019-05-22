@@ -214,7 +214,7 @@ export class ProductsComponent implements OnInit, AfterViewInit {
       url: './../assets/images/fittings/f2.png'
     },
     {
-      label: 'SHORTSTOP II',
+      label: 'SHORTSTOPP® II',
       url: './../assets/images/fittings/f3.png'
     },
     {
